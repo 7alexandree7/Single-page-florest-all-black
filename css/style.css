@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../img/zdenek-machacek-boCk0rIiOSw-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#container .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 10vh;
+}
+
+#container .menu li {
+    display: inline-block; 
+    margin-left: 10px;  
+    padding: 8px 12px; 
+}
+
+#container .menu a {
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+#container .menu .ativo, #container .menu a:hover {
+    color: #444;
+    background: #fff;
+}
+
+.principal {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal .text {
+    margin-bottom: 50px;
+}
+
+.principal .text h2 {
+    color: #fff;
+    font-size: 45px;
+     box-shadow:  2px 20px 25px #00000062;
+}
+
+
+
+.principal .links a {
+    color: #fff;
+    background-color: #00000090;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: vibrar 0.5s ease-in-out infinite both;
+    box-shadow:  2px 20px 25px #fffefe3f;
+}
+
+
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
